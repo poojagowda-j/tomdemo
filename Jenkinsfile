@@ -1,5 +1,5 @@
 pipeline {
-  agent { label 'slave1' }
+  agent { label 'tomcathl-slave' }
          stages {
            stage('Checkout') {
              steps {
@@ -15,7 +15,7 @@ pipeline {
            }
            stages('deploy') {
              steps {
-               sh "cp target/*.war /opt/apache-tomcat-11.0.2/webapps "
+               sh "cp target/*.war /opt/apache-tomcat-11.0.2/webapps/"
              }
            }
          }
