@@ -1,5 +1,5 @@
 pipeline {
-  agent { label 'tomcathl-slave' }
+  agent any
          stages {
            stage('Checkout') {
              steps {
