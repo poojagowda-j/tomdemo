@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('pull') {
             steps {
-              sh "docker pull poojagowdaj/hello-world"
+              sh "docker pull poojagowdaj/hello-world:1.0.0"
             }
         }
         stage('run') {
